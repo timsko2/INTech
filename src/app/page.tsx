@@ -10,8 +10,10 @@ export default function Home() {
           <button>Coupe de France de robotique</button>
       </header>
       <main>
-        <h1>Bienvenue sur le site d'Intech</h1>
-        <p>Intech est l'association de Robotique de Télécom SudParis et de L'Institut Mines-Télécom Business School</p>
+        <div>
+          <h1>Bienvenue sur le site d&apos;Intech</h1>
+          <p>Intech est l&apos;association de Robotique de Télécom SudParis et de L&apos;Institut Mines-Télécom Business School</p>
+        </div>
       </main>
       <footer>
         <button>Mentions légales</button>
