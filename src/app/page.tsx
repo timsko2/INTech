@@ -5,20 +5,18 @@ export default function Home() {
   return (
     <div className="page">
       <header>
-        <div className="header-sup">
           <Image src={logo} alt="Logo d'Intech" height={50}/>
-        </div>
-        <div className="header-inf">
-          <div><h1>Collision</h1></div>
-          <div><h1>Coupe de France de robotique</h1></div>
-        </div>
+          <button>Collision</button>
+          <button>Coupe de France de robotique</button>
       </header>
       <main>
         <h1>Bienvenue sur le site d'Intech</h1>
         <p>Intech est l'association de Robotique de Télécom SudParis et de L'Institut Mines-Télécom Business School</p>
       </main>
       <footer>
-        <h1>Mentions légales</h1>
+        <button>Mentions légales</button>
+        <button>Qui sommes nous ?</button>
+        <button>Nous contacter</button>
       </footer>
 
     </div>
