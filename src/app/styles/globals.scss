@@ -1,0 +1,46 @@
+html, body{
+    height: 100vh;
+    .page{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        header{
+            height: 10vh;
+            background-color:white; 
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            color: white;
+            .header-sup{
+                width: 100%;
+            }
+            .header-inf{
+                display: flex;
+                justify-content: space-around;
+                width: 100%;
+                background-color: blue;
+                padding-top: 5px;
+                padding-bottom: 5px;
+            }
+    
+        }
+        main{
+            height: 80vh;
+            background-color: #f4f4f4;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;        
+        }
+        footer{
+            height: 10vh;
+                background-color: yellow; /* Couleur de fond pour le pied de page */
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: black;
+    
+        }
+    }
+}
