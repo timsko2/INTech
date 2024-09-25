@@ -11,7 +11,7 @@ export default function Home() {
       </header>
       <main>
         <div>
-          <h1>Bienvenue sur le site d&apos;Intech, l&apos;association de robotique de Télécom SudParis et de L&apos;Institut Mines-Télécom Business School</h1>
+          <h1>Bienvenue sur le site d&apos;INTech, l&apos;association de robotique de Télécom SudParis et de L&apos;Institut Mines-Télécom Business School</h1>
         </div>
       </main>
       <footer>
