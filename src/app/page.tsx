@@ -1,5 +1,3 @@
-import Image from "next/image";
-import logo from "../../public/images/INTech.png";
 import Header from "./components/Header";
 
 export default function Home() {
