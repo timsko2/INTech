@@ -10,20 +10,18 @@
     width: 100%;
     padding-top: 5px;
     padding-bottom: 5px;
-    .image-logo{
-        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
-    }
+    
     button{
         background-color:#045b9b;
         padding: 3px;
         padding-left: 6px;
         padding-right: 6px;
         border-radius: 5px;
-        color: yellow;
+        color: #faca04;
         transition: background-color 0.3s, color 0.3s;
     }
     button:hover{
-        background-color: yellow;
+        background-color: #faca04;
         color: #045b9b;
     }
     .menuButton {
@@ -61,7 +59,7 @@
             transition: background-color 0.3s, color 0.3s;
 
             &:hover {
-                background-color: yellow; // Changer de couleur au survol
+                background-color: #faca04; // Changer de couleur au survol
                 color: #045b9b; // Changer la couleur du texte au survol
             }
         }

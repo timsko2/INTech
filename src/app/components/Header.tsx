@@ -13,13 +13,13 @@ const Header:FC = () => {
     };
     return (
         <header className={styles.header}>
-        <Image className="styles.image-logo" src={logo} alt="Logo d'Intech" height={50} />
+        <Image className="image-logo" src={logo} alt="Logo d'Intech" height={50} />
         <div className={styles.buttonContainer}>
-            <button>Collision</button>
-            <button>Coupe de France de robotique</button>
-            <button>Mentions légales</button>
-            <button>Qui sommes nous ?</button>
-            <button>Nous contacter</button>
+            <button className="desktop-button">Collision</button>
+            <button className="desktop-button">Coupe de France de robotique</button>
+            <button className="desktop-button">Mentions légales</button>
+            <button className="desktop-button">Qui sommes nous ?</button>
+            <button className="desktop-button">Nous contacter</button>
         </div>
         <button className={styles.menuButton} onClick={toggleMenu}>
                 Menu
