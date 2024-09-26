@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local"; // Gardez cette ligne si vous avez d'autres polices locales
-import { Roboto } from '@next/font/google'; // Importer Roboto
+import localFont from "next/font/local"; 
+import { Roboto } from '@next/font/google'; 
 import "./styles/reset.css";
 import "./globals.css";
 import "./styles/globals.scss";
+import "./components/Header.module.scss";
 
 // Déclaration de la police Roboto
 const roboto = Roboto({
@@ -11,7 +12,6 @@ const roboto = Roboto({
   weight: ['400', '700'], // Définir les poids que vous souhaitez utiliser
 });
 
-// Si vous utilisez une autre police locale, gardez cette ligne, sinon vous pouvez l'enlever
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
