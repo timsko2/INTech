@@ -2,7 +2,7 @@
     font-size: large;
     position: relative;
     height: 100px;
-    background-color:blue; 
+    background-color:#045b9b; 
     display: flex;
     align-items: center;
     color: white;
@@ -10,59 +10,62 @@
     width: 100%;
     padding-top: 5px;
     padding-bottom: 5px;
-        button{
-            background-color:blue;
-            padding: 3px;
-            padding-left: 6px;
-            padding-right: 6px;
-            border-radius: 5px;
-            color: yellow;
+    .image-logo{
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+    }
+    button{
+        background-color:#045b9b;
+        padding: 3px;
+        padding-left: 6px;
+        padding-right: 6px;
+        border-radius: 5px;
+        color: yellow;
+        transition: background-color 0.3s, color 0.3s;
+    }
+    button:hover{
+        background-color: yellow;
+        color: #045b9b;
+    }
+    .menuButton {
+        display: none; // Cacher par défaut
+
+        @media (max-width: 980px) {
+            display: block; // Afficher en mobile
+        }
+    }
+    .buttonContainer {
+        display: flex;
+
+        @media (max-width: 980px) {
+            display: none; // Cacher les boutons en mobile
+        }
+    }
+    .dropdownMenu {
+        position: absolute;
+        top: 100%; // Placer le menu juste en dessous du header
+        left: 0;
+        right: 0;
+        background-color: white; // Fond du menu
+        color: #045b9b; // Couleur du texte
+        z-index: 0; // S'assurer qu'il soit au-dessus d'autres éléments
+
+        button {
+            display: block; // Les boutons du menu prennent toute la largeur
+            width: 100%; // Prendre toute la largeur du menu
+            background-color: white; // Couleur de fond du bouton
+            color: black; // Couleur du texte
+            border: none; // Pas de bordure
+            padding: 10px; // Padding pour les boutons
+            text-align: left; // Alignement du texte à gauche
+            cursor: pointer; // Curseur pointeur pour l'interaction
             transition: background-color 0.3s, color 0.3s;
-        }
-        button:hover{
-            background-color: yellow;
-            color: blue;
-        }
-        .menuButton {
-            display: none; // Cacher par défaut
-    
-            @media (max-width: 980px) {
-                display: block; // Afficher en mobile
+
+            &:hover {
+                background-color: yellow; // Changer de couleur au survol
+                color: #045b9b; // Changer la couleur du texte au survol
             }
         }
-        .buttonContainer {
-            display: flex;
-    
-            @media (max-width: 980px) {
-                display: none; // Cacher les boutons en mobile
-            }
-        }
-        .dropdownMenu {
-            position: absolute;
-            top: 100%; // Placer le menu juste en dessous du header
-            left: 0;
-            right: 0;
-            background-color: white; // Fond du menu
-            color: blue; // Couleur du texte
-            z-index: 0; // S'assurer qu'il soit au-dessus d'autres éléments
-    
-            button {
-                display: block; // Les boutons du menu prennent toute la largeur
-                width: 100%; // Prendre toute la largeur du menu
-                background-color: white; // Couleur de fond du bouton
-                color: black; // Couleur du texte
-                border: none; // Pas de bordure
-                padding: 10px; // Padding pour les boutons
-                text-align: left; // Alignement du texte à gauche
-                cursor: pointer; // Curseur pointeur pour l'interaction
-                transition: background-color 0.3s, color 0.3s;
-    
-                &:hover {
-                    background-color: yellow; // Changer de couleur au survol
-                    color: blue; // Changer la couleur du texte au survol
-                }
-            }
-        }
+    }
 
 }
 .header::after {

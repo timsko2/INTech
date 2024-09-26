@@ -3,6 +3,7 @@ import Image from "next/image";
 import logo from "../../../public/images/INTech.png";
 import { FC } from 'react';
 import styles from './Header.module.scss';
+import './Header.module.scss';
 import { useState } from 'react';
 
 const Header:FC = () => {
@@ -12,7 +13,7 @@ const Header:FC = () => {
     };
     return (
         <header className={styles.header}>
-        <Image src={logo} alt="Logo d'Intech" height={50}/>
+        <Image className="styles.image-logo" src={logo} alt="Logo d'Intech" height={50} />
         <div className={styles.buttonContainer}>
             <button>Collision</button>
             <button>Coupe de France de robotique</button>
