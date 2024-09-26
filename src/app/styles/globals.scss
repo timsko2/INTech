@@ -1,5 +1,5 @@
 html, body{
-    height: 100vh;
+    height: 100%;
     .page{
         display: flex;
         flex-direction: column;
@@ -53,6 +53,9 @@ html, body{
             background-repeat: no-repeat;
             background-attachment: fixed;
             background-size: cover;
+            background-position: center;
+            flex:1;
+            overflow-y: auto;
             div{
                 padding: 10px;
                 font-size: 30px;
